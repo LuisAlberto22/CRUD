@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CRUD.Conexion.ConexionSQL">
+    <Position X="0.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAEAA=</HashCode>
+      <FileName>Conexion\ConexionSQL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRUD.Conexion.BaseConexion">
+    <Position X="0.75" Y="2" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAACAAAAAAAAAAAAAAAAAGAAAAAAAACCAAAA=</HashCode>
+      <FileName>Conexion\BaseConexion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRUD.CRUDS.Entidades.Productos">
+    <Position X="2.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAgAAAgAAAAAIRQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CRUDS\Entidades\Productos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRUD.CRUDS.Entidades.Modelo">
+    <Position X="3.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAKAAAAgAgAIBAAAAAIAAAAAAAABA=</HashCode>
+      <FileName>CRUDS\Entidades\Modelo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CRUD.Formularios.Buscar" Collapsed="true">
+    <Position X="6.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAMgAAACAKAAAwAAwACAAAACAAAAAAACAQABACYAIAE=</HashCode>
+      <FileName>Formularios\Buscar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRUD.Formularios.Insertar" Collapsed="true">
+    <Position X="6.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAMgAAAAAKAAAwAAAACQAAACAAAAAAACAQAAACYAIAE=</HashCode>
+      <FileName>Formularios\Insertar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRUD.Formularios.Modificar" Collapsed="true">
+    <Position X="6.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAMgAAAAAKAAAwAAAACAAAACAAAAAAACAQgAACYAIAE=</HashCode>
+      <FileName>Formularios\Modificar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRUD.Form1" Collapsed="true">
+    <Position X="6.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAEBAJCBAAAAAIACAgAAWAAAAEAAAAAQAEAAIAAA=</HashCode>
+      <FileName>Formularios\Principal.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CRUD.Herramientas.ConvertidorSQLDataAModelo" Collapsed="true">
+    <Position X="0.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Herramientas\ConvertidorSQLDataAModelo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRUD.CRUDS.Entidades.Marca">
+    <Position X="5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CRUDS\Entidades\Marca.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="CRUD.CRUDS.Entidades.IBooteable" Collapsed="true">
+    <Position X="5.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Herramientas\Interfaces\IBooteable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
