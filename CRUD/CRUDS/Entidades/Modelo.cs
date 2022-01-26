@@ -31,6 +31,8 @@ namespace CRUD.CRUDS.Entidades
 		/// <exception cref="NotImplementedException"></exception>
 		public static Modelo Buscar(Type Modelo,string NK,int ID)
 		{
+		    if (Modelo.IsSubclassOf(typeof(Modelo)))
+		      {
 			try
 			{
 				BaseConexion.IniciarConexion();
@@ -45,6 +47,8 @@ namespace CRUD.CRUDS.Entidades
 			{
 				BaseConexion.CerrarConexion();
 			}
+		    }else
+		    	throw new Exception("La variable Modelo no es de tipo Modelo");
 		}
 		
 		/// <summary>
@@ -54,20 +58,24 @@ namespace CRUD.CRUDS.Entidades
 		/// <returns>Retorna una lista de los modelos de la tabla</returns>
 		public static List<Modelo> Todos(Type Modelo)  
 		{
-			try
-			{
-				BaseConexion.IniciarConexion();
-				SqlCommand Comando = new SqlCommand($"SELECT * FROM {Modelo.Name}", BaseConexion.ConexionBD as SqlConnection);
-				return ConvertidorSQLDataAModelo.ObtenerModelos(Comando.ExecuteReader(), Modelo.Name);
-			}
-			catch (SqlException e)
-			{
-				throw new Exception(e.Message);
-			}
-			finally
-			{
-				BaseConexion.CerrarConexion();
-			}
+			if (Modelo.IsSubclassOf(typeof(Modelo)))
+		        {
+				try
+				{
+					BaseConexion.IniciarConexion();
+					SqlCommand Comando = new SqlCommand($"SELECT * FROM {Modelo.Name}", BaseConexion.ConexionBD as SqlConnection);
+					return ConvertidorSQLDataAModelo.ObtenerModelos(Comando.ExecuteReader(), Modelo.Name);
+				}
+				catch (SqlException e)
+				{
+					throw new Exception(e.Message);
+				}
+				finally
+				{
+					BaseConexion.CerrarConexion();
+				}
+			  }else
+		    		throw new Exception("La variable Modelo no es de tipo Modelo");
 		}
 
 		/// <summary>
