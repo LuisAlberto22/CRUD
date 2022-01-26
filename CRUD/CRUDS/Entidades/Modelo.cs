@@ -28,7 +28,6 @@ namespace CRUD.CRUDS.Entidades
 		/// <param name="ID">El ID del modelo a buscar</param>
 		/// <param name="NK">Nombre de la primary key de la tabla</param>
 		/// <returns>Si el modelo se ha encontrado retorna el modelo, de lo contrario retorna null</returns>
-		/// <exception cref="NotImplementedException"></exception>
 		public static Modelo Buscar(Type Modelo,string NK,int ID)
 		{
 		    if (Modelo.IsSubclassOf(typeof(Modelo)))
